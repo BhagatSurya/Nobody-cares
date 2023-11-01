@@ -3,7 +3,7 @@ var age =20
 var has_hobbies = true;
 console.log(name);
 
-function usediscrption(username,hisage,ishobby) {
+function usediscrption(username,hisage=10,ishobby) {
     return (
         username + "hello\n" +
         `his age ${hisage}\n` +
