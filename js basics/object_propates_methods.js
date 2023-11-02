@@ -21,6 +21,8 @@ for(let i of hobbies) {
 }
 
 console.log(hobbies)
+
+//map method
 console.log(hobbies.map(hobby => {
-    return 'Hobby' + hobby
+    return 'Hobby:' + hobby
 }))
