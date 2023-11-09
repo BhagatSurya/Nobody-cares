@@ -12,7 +12,7 @@ const http = require('http');
 const serverlogic = (req,res) => {
     const url = req.url
     const method =  req.method
-    let message = ''; // Declare the message variable outside of the if blocks
+// let message = ''; // Declare the message variable outside of the if blocks
 
 if (url === '/') {
     res.setHeader('Content-Type', 'text/html');
@@ -46,7 +46,7 @@ if (url==='/user' && method==='POST'){
     req.on('end',()=> {
         const parsbody = Buffer.concat(body).toString()
         console.log(parsbody)
-        message = parsbody.split('=')[1]
+        const message = parsbody.split('=')[1]
         console.log(message)
         console.log('Received message:', message);
         res.setHeader('Content-Type', 'text/html');
