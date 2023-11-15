@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* You can customize the styles further based on your preferences */
