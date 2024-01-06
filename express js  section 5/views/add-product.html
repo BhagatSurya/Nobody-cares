@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD Product</title>
-<link rel="stylesheet" href="/css/add-product.css">
+    <title>add-product</title>
+    <link rel="stylesheet" href="/css/add-product.css">
+
 </head>
 <body>
     <header>
         <nav>
             <li><a href="/">Shop</a></li>
-            <li><a href="/add-product">Add product</a></li>
+            <li><a href="/add-product">add producrt</a></li>
         </nav>
     </header>
-    <main>
-        <form action="/admin/product" method="post">
-        <input type="text" name="title">
-        <button type="submit">ADD Product</button>
-        </form>
-    </main>
+    <form action="/product" method="post">
+        <label for="pname">Peoduct name</label><br>
+        <input type="text" id="pname" name="pname"><br>
+        <input type="submit" value="Submit">
+      </form>
 </body>
 </html>
