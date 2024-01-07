@@ -7,6 +7,10 @@ const shoproute =  require('./routes/shop')
 const path = require('path')
 const app = express({extended:false})
 
+
+app.set('view engine', 'pug')
+app.set('views', 'views')
+
 //middleware
 app.use(bodyparser.urlencoded())
 app.use(express.static(path.join(__dirname,'public')))

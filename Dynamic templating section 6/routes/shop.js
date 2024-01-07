@@ -9,7 +9,8 @@ const route =  express.Router()
 
 route.get('/',(req,res,next) =>{
     console.log(adminData.products)
-    res.sendFile(path.join(rootdir,'views','shop.html'))
+    //res.sendFile(path.join(rootdir,'views','shop.html'))
+    res.render('shop')
     
 })
 
