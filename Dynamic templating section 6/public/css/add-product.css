@@ -60,6 +60,6 @@ button:hover {
 }
 
 .active {
-    color: blue; /* Changes the text color to blue */
+    color: rgb(194, 194, 240); /* Changes the text color to blue */
 
 }

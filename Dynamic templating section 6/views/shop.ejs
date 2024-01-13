@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= pageTitle %></title>
-    <link rel="stylesheet" href="/css/shop.css">
+<%- include('includes/head.ejs') %>
 </head>
 <body>
-    <header>
-        <nav>
-            <li><a href="/">Shop</a></li>
-            <li><a href="/admin/add-product">Add Product</a></li> <!-- Corrected "add producrt" to "Add Product" -->
-        </nav>
-    </header>
+    <%- include('includes/nav.ejs') %>
     <main>
         <% if(prodsdata.length > 0) { %>
         <div class="grid"> <!-- Corrected "dev" to "div" -->
@@ -23,7 +12,7 @@
                     </header>
                     
                     <div class="card__image"> <!-- Corrected "dev" to "div" -->
-                        <img src="https://cdn.pixabay.com/photo/2015/11/05/18/59/book-cover-1024644_1280.jpg" alt="A book">
+                        <img src="https://png.pngitem.com/pimgs/s/15-158424_a-brief-history-of-time-book-cover-hd.png" alt="A book">
                     </div>
                     <div class="card__content"> <!-- Corrected "dev" to "div" -->
                         <h2 class="product__price">Rs 19</h2>
@@ -39,5 +28,5 @@
             <h1>No product Found</h1>
         <% } %>
     </main>
-</body>
-</html>
+    <%- include('includes/end.ejs') %>
+

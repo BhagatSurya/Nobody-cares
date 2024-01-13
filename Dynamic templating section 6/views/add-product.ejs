@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=pageTitle%></title>
-    <link rel="stylesheet" href="/css/add-product.css">
+<%- include('includes/head.ejs') %>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <li><a href="/">Shop</a></li>
-            <li><a href="/admin/add-product">add producrt</a></li>
-        </nav>
-    </header>
+    <%- include('includes/nav.ejs') %>
+
+
     <form action="/admin/product" method="post">
         <label for="title">product name</label><br>
         <input type="text" id="title" name="title"><br>
