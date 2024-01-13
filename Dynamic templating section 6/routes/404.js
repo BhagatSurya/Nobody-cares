@@ -4,7 +4,7 @@ const rootdir = require('../helper/root-path')
 const route = express.Router()
 
 route.use((req,res,next) => {
-    res.status(404).sendFile(path.join(rootdir,'views','404.html'))
+    res.render('404',{pageTitle:'404'})
 })
 
 module.exports = route

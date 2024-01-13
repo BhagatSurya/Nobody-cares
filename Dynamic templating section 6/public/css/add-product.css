@@ -58,3 +58,8 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+.active {
+    color: blue; /* Changes the text color to blue */
+
+}

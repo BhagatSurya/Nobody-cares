@@ -7,14 +7,16 @@ const router = express.Router()
 
 const products = []
 
-router.get('/add-product',(req,res)=>{
-    res.sendFile(path.join(rootdir,'views','add-product.html'))
+router.get('/add-product',(req,res,next)=>{
+    res.render('add-product',{pageTitle:'Add product',
+    path:'/admin/add-product',
+  })
 })
 
 router.post('/product',(req,res,next) =>{
    const title_message = req.body.title;
    products.push({title: title_message})
-
+   console.log(title_message)
    res.redirect('/')
     
 })
