@@ -1,3 +1,5 @@
+/*
+
 const feachdata = () => {
     const promise = new Promise((reslove,reject)=>{
         setTimeout(()=>{
@@ -17,8 +19,16 @@ setTimeout(() => {
 
     })
 },2000) 
-
 //promiss
 
 console.log('rt')
 console.log('fg')
+logger()
+console.log(1)
+*/
+
+const fs = requir('fs')
+
+function readFile(callback,errorcallback) {
+    
+}

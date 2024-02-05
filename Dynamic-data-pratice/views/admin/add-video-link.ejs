@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pageTitle%></title>
+    <style>
+        /* Basic styling; you can expand this as needed */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label, input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 5px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add a New YouTube Video</h1>
+    <form action="/admin/postvideo" method="post">
+        <label for="videoUrl">YouTube Video Link</label><br>
+        <input type="text" id="videoUrl" name="videoUrl" required><br>
+        <button type="submit">Add Video</button>
+    </form>
+    <a href="/admin">Back to Admin</a>
+</body>
+</html>
